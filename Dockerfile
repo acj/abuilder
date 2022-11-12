@@ -9,7 +9,8 @@ LABEL "repository"="http://github.com/acj/abuilder"
 LABEL "homepage"="http://github.com/acj/abuilder"
 LABEL "maintainer"="Adam Jensen <acjensen@gmail.com>"
 
-RUN apk update && \
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
+    apk update && \
     apk add --update --no-cache git build-base alpine-sdk && \
     addgroup root abuild
 
