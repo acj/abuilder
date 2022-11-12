@@ -5,9 +5,9 @@ LABEL "com.github.actions.description"=""
 LABEL "com.github.actions.icon"="mic"
 LABEL "com.github.actions.color"="purple"
 
-LABEL "repository"="http://github.com/acj/abuilder"
-LABEL "homepage"="http://github.com/acj/abuilder"
-LABEL "maintainer"="Adam Jensen <acjensen@gmail.com>"
+LABEL "repository"="http://github.com/acj/action-abuild"
+LABEL "homepage"="http://github.com/acj/action-abuild"
+LABEL "maintainer"="Adam Jensen <adam@acj.sh>"
 
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
     apk update && \
