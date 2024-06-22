@@ -9,6 +9,8 @@ mkdir "$GITHUB_WORKSPACE"/.abuild
 echo "$GITHUB_WORKSPACE/key" | abuild-keygen
 echo PACKAGER_PRIVKEY="$GITHUB_WORKSPACE/key" > "$HOME"/.abuild/abuild.conf
 
+cp "$GITHUB_WORKSPACE/key.pub" /etc/apk/keys
+
 cd "$GITHUB_WORKSPACE/$INPUT_PACKAGE_PATH"
 
 # Update the package version
